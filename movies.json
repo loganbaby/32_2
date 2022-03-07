@@ -1,0 +1,24 @@
+{
+  "disobedient": {
+    "producer": "Vladimir Kott",
+    "screenwriter": "Mikhail Bobrovnik",
+    "operator": "Denis Panov",
+    "composer": "Aleksey Chinov",
+    "date": 2022,
+    "actors": [
+      {
+        "name": "Viktor Harinak",
+        "birthday": 1990,
+        "gender": false,
+        "role": "main actor"
+      },
+
+      {
+        "name": "Taisia Vilkova",
+        "birthday": 1996,
+        "gender": true,
+        "role": "main actor"
+      }
+    ]
+  }
+}
