@@ -1,5 +1,5 @@
+﻿#include <fstream>
 #include <iostream>
-#include <fstream>
 #include <string>
 
 #include "nlohmann/json.hpp"
@@ -9,7 +9,7 @@ inline void findActor(std::string path) {
   if (file.is_open()) {
     nlohmann::json j;
     file >> j;
-    //std::cout << j["disobedient"]["actors"][1]["name"];
+    // std::cout << j["disobedient"]["actors"][1]["name"];
     std::cout << "Enter the name of actor" << std::endl;
     std::cout << "For example: 'Viktor Harinak'" << std::endl;
     std::cout << ">>> ";
@@ -21,12 +21,12 @@ inline void findActor(std::string path) {
       nlohmann::json movie = it.value();
       nlohmann::json movies = movie["actors"];
 
-      int j = 0;
-      for (auto jt = movies.begin(); jt != movies.end(); jt++, j++) {
-        std::string foundName = to_string(jt.value());
-        std::cout << movies[j];
+      for (auto jt = movies.begin(); jt != movies.end(); jt++) {
+        if (jt.key() == name) {
+          std::cout << name << " - " << jt.value() << std::endl;
+        }
       }
-    } 
+    }
   } else {
     std::cout << "File not found!" << std::endl;
   }
@@ -47,7 +47,7 @@ inline void showJson(std::string path) {
 
 enum class CommandType { SHOW_JSON = 1, FIND_ACTOR, EXIT };
 
-int main() { 
+int main() {
   int command = 0;
 
   while (command != static_cast<int>(CommandType::EXIT)) {

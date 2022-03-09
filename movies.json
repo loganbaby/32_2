@@ -5,20 +5,25 @@
     "operator": "Denis Panov",
     "composer": "Aleksey Chinov",
     "date": 2022,
-    "actors": [
-      {
-        "name": "Viktor Harinak",
-        "birthday": 1990,
-        "gender": false,
-        "role": "main actor"
-      },
+    "actors": {
+      "Viktor Harinak": "disobedient / main actor",
+      "Taisia Vilkova": "disobedient helper / second main actor"
+    }
+  },
 
-      {
-        "name": "Taisia Vilkova",
-        "birthday": 1996,
-        "gender": true,
-        "role": "main actor"
-      }
-    ]
+  "Joker": {
+    "companies": [ "Warner Bros. Pictures", "DC Films", "Village Roadshow Pictures" ],
+    "country": "USA",
+    "date": "04.10.2019",
+    "directed_by": "Todd Phillips",
+    "produced_by": [ "Todd Phillips", "Bradley Cooper", "Emma Tillinger Koskoff" ],
+    "screenplay_by": [ "Todd Phillips", "Scott Silver" ],
+    "actors": {
+      "Frances Conroy": " Penny Fleck/Artur's mother",
+      "Joaquin Phoenix": "Artur Flek/Joker",
+      "Robert de Niro": "Murray Franklin",
+      "Taron Egerton": "Gary/Eggsy",
+      "Zazie Beetz": "Sophie Dumond"
+    }
   }
 }
